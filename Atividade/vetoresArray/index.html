@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios de Vetores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercícios de Vetores</h1>
+
+  <div class="box">
+    <h2>Soma dos Elementos</h2>
+    <p>Vetor: [5, 10, 15, 20, 25]</p>
+    <button onclick="somarElementos()">Calcular Soma</button>
+    <p id="resultadoSoma"></p>
+  </div>
+
+  <div class="box">
+    <h2>Maior e Menor Valor</h2>
+    <p>Digite 5 números:</p>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <input type="number" id="n3">
+    <input type="number" id="n4">
+    <input type="number" id="n5">
+    <br>
+    <button onclick="maiorMenor()">Calcular</button>
+    <p id="resultadoMaiorMenor"></p>
+  </div>
+
+  <div class="box">
+    <h2>Contar Pares e Ímpares</h2>
+    <button onclick="contarParesImpares()">Gerar Vetor e Contar</button>
+    <p id="resultadoParesImpares"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
