@@ -1,7 +1,6 @@
 /*
-  Cores e Estilos Malucos!
-  -- Fundo de "caderno" para dar um toque infantil
-  -- Cores neon para destacar os resultados
+  CSS Engraçado e Divertido
+  Este arquivo deve ser salvo como 'style.css'
 */
 :root {
     --cor-fundo-caderno: #fff8e1; /* Amarelo pálido, cor de papel antigo */
@@ -12,11 +11,10 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* A fonte mais divertida (e polêmica) que existe! */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: var(--cor-fundo-caderno);
     color: var(--cor-tinta);
     padding: 40px;
-    /* Adicionando um padrão de fundo sutil (como linhas de caderno) */
     background-image: repeating-linear-gradient(
         to bottom,
         transparent,
@@ -27,45 +25,43 @@ body {
 }
 
 h1 {
-    font-family: fantasy, "Impact", sans-serif; /* Fonte de impacto para o título! */
+    font-family: fantasy, "Impact", sans-serif;
     color: var(--cor-destaque-neon);
-    text-shadow: 3px 3px 0 var(--cor-tinta); /* Sombra 3D bizarra */
+    text-shadow: 3px 3px 0 var(--cor-tinta);
     font-size: 3em;
-    border-bottom: 5px dashed var(--cor-sombra-divertida); /* Linha tracejada engraçada */
+    border-bottom: 5px dashed var(--cor-sombra-divertida);
     padding-bottom: 10px;
     margin-bottom: 40px;
-    animation: pulsar 2s infinite alternate; /* O título pulsa! */
+    animation: pulsar 2s infinite alternate;
 }
 
-/* Animação para o título */
 @keyframes pulsar {
     from { transform: scale(1); }
     to { transform: scale(1.05); }
 }
 
-input[type="text"] {
+input[type="number"] {
     border: 3px solid var(--cor-tinta);
-    border-radius: 15px 5px 15px 5px; /* Borda assimétrica para um look "feito à mão" */
+    border-radius: 15px 5px 15px 5px;
     padding: 8px 10px;
     font-size: 1.1em;
     color: var(--cor-tinta);
     background-color: #ffffff;
     margin-right: 15px;
     transition: all 0.2s ease-in-out;
+    width: 150px;
 }
 
-input[type="text"]:focus {
+input[type="number"]:focus {
     border-color: var(--cor-destaque-neon);
     box-shadow: 0 0 10px var(--cor-destaque-neon);
-    transform: rotate(-1deg); /* Gira levemente ao focar! */
+    transform: rotate(-1deg);
 }
 
-/* Estilo para os rótulos */
 label {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 5px;
-    /* Faz o texto parecer tremido */
     animation: tremer 0.5s infinite alternate;
 }
 
@@ -75,7 +71,6 @@ label {
     100% { transform: translate(1px, -1px) rotate(1deg); }
 }
 
-
 button {
     background-color: var(--cor-botao-goma);
     color: var(--cor-tinta);
@@ -83,7 +78,7 @@ button {
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: 900;
-    border-radius: 50%; /* Botão Redondo como uma Goma de Mascar */
+    border-radius: 50%;
     cursor: pointer;
     margin-top: 30px;
     box-shadow: 5px 5px 0 var(--cor-sombra-divertida);
@@ -92,27 +87,33 @@ button {
 }
 
 button:hover {
-    background-color: #69f0ae; /* Fica mais claro */
-    transform: scale(1.05); /* Cresce! */
+    background-color: #69f0ae;
+    transform: scale(1.05);
 }
 
 button:active {
-    /* Efeito de "apertar" */
     box-shadow: 0 0 0 var(--cor-sombra-divertida);
     transform: translate(5px, 5px);
 }
 
-/* Estilo para os resultados (Soma, Subtração, etc.) */
-.resultado {
-    margin-top: 25px;
-    font-size: 1.3em;
-    line-height: 1.8;
+#resuldado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 5px dotted var(--cor-sombra-divertida);
+    border-radius: 10px;
+    max-width: 400px;
 }
 
-/* Destaca o texto dos resultados, como um balão de fala */
-.resultado span {
+#resuldado p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+#resuldado span {
     color: var(--cor-destaque-neon);
     font-weight: 900;
-    text-decoration: underline wavy var(--cor-botao-goma); /* Sublinhado ondulado */
+    text-decoration: underline wavy var(--cor-botao-goma);
     padding: 2px 5px;
 }
