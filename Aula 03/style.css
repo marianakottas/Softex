@@ -1,13 +1,9 @@
-/*
-  CSS Engraçado e Divertido
-  Este arquivo deve ser salvo como 'style.css'
-*/
 :root {
-    --cor-fundo-caderno: #fff8e1; /* Amarelo pálido, cor de papel antigo */
-    --cor-tinta: #4a148c; /* Roxo escuro para o texto */
-    --cor-destaque-neon: #ff1744; /* Vermelho Neon Berrante */
-    --cor-botao-goma: #00e676; /* Verde Chiclete */
-    --cor-sombra-divertida: #f9a825; /* Amarelo Laranja para sombras */
+    --cor-fundo-caderno: #fff8e1; 
+    --cor-tinta: #4a148c; 
+    --cor-destaque-neon: #ff1744; 
+    --cor-botao-goma: #00e676; 
+    --cor-sombra-divertida: #f9a825; 
 }
 
 body {
